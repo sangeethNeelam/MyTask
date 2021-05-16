@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 //local imports
 import "./core.less";
-import Main from "../Pages/index.js";
+import App from "./App";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +22,7 @@ const Core = () => {
       <div className={classes.root}>
         <Router>
           <NotFound default path="404" />
-          <Main path="/*" />
+          <App path="/" />
         </Router>
       </div>
     </React.Fragment>
